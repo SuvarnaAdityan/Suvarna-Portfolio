@@ -1,8 +1,8 @@
 export default function Home() {
   return (
-    <main>
+    <main style={{ padding: "40px" }}>
       <h1>Suvarna Ramu</h1>
-      <p>Portfolio Website</p>
+      <p>My Portfolio Website</p>
     </main>
   );
 }
