@@ -3,19 +3,19 @@ import Link from "next/link";
 
 export default function Navbar() {
   return (
-    <nav className="fixed top-0 w-full glass z-50">
-      <div className="max-w-6xl mx-auto flex justify-between px-6 py-4">
+    <nav className="fixed top-0 w-full bg-[#0b0f19]/90 backdrop-blur border-b border-gray-800 z-50">
+      <div className="container flex justify-between items-center px-6 py-4">
 
-        <h1 className="font-semibold text-lg tracking-wide">
+        <h1 className="text-lg font-semibold tracking-wide">
           Suvarna Ramu
         </h1>
 
-        <div className="space-x-6 text-gray-300">
-          <Link href="/">Home</Link>
-          <Link href="/projects">Projects</Link>
-          <Link href="/publications">Publications</Link>
-          <Link href="/resume">Resume</Link>
-          <Link href="/contact">Contact</Link>
+        <div className="flex gap-8 text-sm text-gray-300">
+          <Link href="/" className="hover:text-white">Home</Link>
+          <Link href="/projects" className="hover:text-white">Projects</Link>
+          <Link href="/publications" className="hover:text-white">Publications</Link>
+          <Link href="/resume" className="hover:text-white">Resume</Link>
+          <Link href="/contact" className="hover:text-white">Contact</Link>
         </div>
 
       </div>

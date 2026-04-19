@@ -2,14 +2,47 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Base */
 body {
-  background: #0a0a0a;
-  color: #ffffff;
-  font-family: system-ui, sans-serif;
+  background: #0b0f19;
+  color: #e5e7eb;
+  font-family: 'Inter', system-ui, sans-serif;
 }
 
+/* Container */
+.container {
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* Glass card */
 .glass {
-  background: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(12px);
-  border: 1px solid rgba(255,255,255,0.1);
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 16px;
+}
+
+/* Button styles */
+.btn-primary {
+  background: #2563eb;
+  padding: 12px 24px;
+  border-radius: 10px;
+  color: white;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.btn-primary:hover {
+  background: #1d4ed8;
+}
+
+.btn-outline {
+  border: 1px solid #374151;
+  padding: 12px 24px;
+  border-radius: 10px;
+  color: #d1d5db;
+}
+
+.btn-outline:hover {
+  background: #111827;
 }

@@ -1,31 +1,31 @@
 "use client";
-import { motion } from "framer-motion";
 
 export default function Home() {
   return (
-    <main className="min-h-screen flex flex-col justify-center items-center px-6 pt-32">
+    <main className="min-h-screen flex items-center justify-center px-6 pt-24">
 
-      <motion.h1
-        initial={{ opacity: 0, y: 40 }}
-        animate={{ opacity: 1, y: 0 }}
-        className="text-6xl font-bold text-center"
-      >
-        Hi, I’m <span className="text-blue-500">Suvarna Ramu</span>
-      </motion.h1>
+      <div className="text-center max-w-2xl">
 
-      <p className="mt-6 text-gray-400 text-center max-w-xl">
-        Software Engineer building AI-driven systems and modern web applications.
-      </p>
+        <h1 className="text-5xl font-bold leading-tight">
+          Hi, I’m <span className="text-blue-500">Suvarna Ramu</span>
+        </h1>
 
-      <div className="mt-10 flex gap-4">
-        <a href="/projects" className="bg-blue-500 px-6 py-3 rounded-xl">
-          View Work
-        </a>
+        <p className="mt-6 text-lg text-gray-400">
+          Software Engineer building AI-driven systems and modern web applications.
+        </p>
 
-        <a href="/SUVARNA RAMU RESUME.pdf" target="_blank"
-          className="glass px-6 py-3 rounded-xl">
-          Resume
-        </a>
+        <div className="mt-10 flex justify-center gap-4">
+
+          <a href="/projects" className="btn-primary">
+            View Projects
+          </a>
+
+          <a href="/SUVARNA RAMU RESUME.pdf" target="_blank" className="btn-outline">
+            Resume
+          </a>
+
+        </div>
+
       </div>
 
     </main>
